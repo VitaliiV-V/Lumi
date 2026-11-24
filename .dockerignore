@@ -1,0 +1,6 @@
+**
+!Dockerfile
+!requirements.txt
+!reminder_bot/
+reminder_bot/**
+!reminder_bot/*.py

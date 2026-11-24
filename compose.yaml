@@ -1,0 +1,12 @@
+services:
+  reminder:
+    build: .
+    env_file: .env
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 75s
+    volumes:
+      - reminder_data:/app/data
+
+volumes:
+  reminder_data:
